@@ -18,20 +18,20 @@ There are two ways to get a source tree:
 
   Download the GHC source distribution:
 
-    ghc-<version>-src.tar.bz2
+      ghc-<version>-src.tar.bz2
 
   which contains GHC itself and the "boot" libraries.
 
  2. *Check out the source code from git*
-  
+
   First clone the GHC github read-only repository:
-  
-    $ git clone git://github.com/ghc/ghc.git
-  
+
+     $ git clone git://github.com/ghc/ghc.git
+
   Then run the `sync-all` script in that repository to get the other repositories:
 
-    $ cd ghc
-    $ ./sync-all get
+      $ cd ghc
+      $ ./sync-all get
 
   This checks out the "boot" packages.
 
