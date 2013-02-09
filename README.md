@@ -15,17 +15,24 @@ Getting the Source
 There are two ways to get a source tree:
 
  1. *Download source tarballs*
+
   Download the GHC source distribution:
+
     ghc-<version>-src.tar.bz2
+
   which contains GHC itself and the "boot" libraries.
 
  2. *Check out the source code from git*
+  
   First clone the GHC github read-only repository:
+  
     $ git clone git://github.com/ghc/ghc.git
-  Then run the `sync-all` script in that repository to get the other
-  repositories:
+  
+  Then run the `sync-all` script in that repository to get the other repositories:
+
     $ cd ghc
     $ ./sync-all get
+
   This checks out the "boot" packages.
 
   **DO NOT submit pull request directly to the github repo.**
@@ -76,21 +83,21 @@ repos in sync with the [sync-all script] [7].  To get the latest changes:
 References
 ==========
 
-  [1]: http://www.haskell.org/ghc/            "GHC Home Page"
-  [2]: http://hackage.haskell.org/trac/ghc    "GHC Developer's Wiki"
+  [1]: http://www.haskell.org/ghc/            "www.haskell.org/ghc/"
+  [2]: http://hackage.haskell.org/trac/ghc    "hackage.haskell.org/trac/ghc"
   [3]: http://hackage.haskell.org/trac/ghc/wiki/Building
-                                              "Building Guide"
-  [4]: http://www.haskell.org/happy/          "Happy"
-  [5]: http://www.haskell.org/alex/           "Alex"
-  [6]: http://www.haskell.org/haddock/        "Haddock"
+       "hackage.haskell.org/trac/ghc/wiki/Building"
+  [4]: http://www.haskell.org/happy/          "www.haskell.org/happy/"
+  [5]: http://www.haskell.org/alex/           "www.haskell.org/alex/"
+  [6]: http://www.haskell.org/haddock/        "www.haskell.org/haddock/"
   [7]: http://hackage.haskell.org/trac/ghc/wiki/Building/SyncAll
-                                              "Building: sync-all"
+       "http://hackage.haskell.org/trac/ghc/wiki/Building/SyncAll"
   [8]: http://hackage.haskell.org/trac/ghc/wiki/Building/Preparation
-                                              "Building: Preparation"
-  [9]: http://www.haskell.org/cabal/          "Cabal"
+       "http://hackage.haskell.org/trac/ghc/wiki/Building/Preparation"
+  [9]: http://www.haskell.org/cabal/          "http://www.haskell.org/cabal/"
 
 
 Contributors
 ============
 
-Please see the list of [GHC contributors](http://www.haskell.org/ghc/contributors.html "GHC contributors").
+Please see the list of [GHC contributors](http://www.haskell.org/ghc/contributors.html "www.haskell.org/ghc/contributors.html").
