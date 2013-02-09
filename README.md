@@ -15,29 +15,21 @@ Getting the Source
 There are two ways to get a source tree:
 
  1. *Download source tarballs*
-
-    Download the GHC source distribution:
-
->       ghc-<version>-src.tar.bz2
-
-    which contains GHC itself and the "boot" libraries.
+  Download the GHC source distribution:
+    ghc-<version>-src.tar.bz2
+  which contains GHC itself and the "boot" libraries.
 
  2. *Check out the source code from git*
+  First clone the GHC github read-only repository:
+    $ git clone git://github.com/ghc/ghc.git
+  Then run the `sync-all` script in that repository to get the other
+  repositories:
+    $ cd ghc
+    $ ./sync-all get
+  This checks out the "boot" packages.
 
-    First clone the GHC github read-only repository:
-
->       $ git clone git://github.com/ghc/ghc.git
-
-    Then run the `sync-all` script in that repository
-    to get the other repositories:
-
->       $ cd ghc
->       $ ./sync-all get
-
-    This checks out the "boot" packages.
-
-    **DO NOT submit pull request directly to the github repo.**
-    *See the GHC developer team's working conventions re [contributing patches](http://hackage.haskell.org/trac/ghc/wiki/WorkingConventions/Git#Contributingpatches "hackage.haskell.org/trac/ghc/wiki/WorkingConventions/Git#Contributingpatches").*
+  **DO NOT submit pull request directly to the github repo.**
+  *See the GHC developer team's working conventions re [contributing patches](http://hackage.haskell.org/trac/ghc/wiki/WorkingConventions/Git#Contributingpatches "hackage.haskell.org/trac/ghc/wiki/WorkingConventions/Git#Contributingpatches").*
 
 
 Building & Installing
@@ -59,12 +51,12 @@ For building library documentation, you'll need [Haddock] [6].  To build
 the compiler documentation, you need a good DocBook XML toolchain and
 dblatex.
 
-Quick start:  the following gives you a default build:
+**Quick start**: the following gives you a default build:
 
->   $ perl boot
->   $ ./configure
->   $ make
->   $ make install
+    $ perl boot
+    $ ./configure
+    $ make
+    $ make install
 
 The `perl boot` step is only necessary if this is a tree checked out
 from git.  For source distributions downloaded from [GHC's web site] [1],
@@ -75,10 +67,10 @@ optimised and built in various ways (eg. profiling libs are built).
 It can take a long time.  To customise the build, see the file `HACKING`.
 
 Once you have a build you need to keep it going.  You need to keep all
-repos in sync with the [`sync-all` script] [7].  To get the latest changes:
+repos in sync with the [sync-all script] [7].  To get the latest changes:
 
->   $ ./sync-all pull
->   $ ./sync-all get
+    $ ./sync-all pull
+    $ ./sync-all get
 
 
 References
