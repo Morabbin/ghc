@@ -1,7 +1,7 @@
 The Glasgow Haskell Compiler
 ============================
 
-This is the source tree for GHC, a compiler and interactive
+This is the source tree for [GHC] [1], a compiler and interactive
 environment for the Haskell functional programming language.
 
 For more information, visit [GHC's web site] [1].
@@ -80,8 +80,11 @@ repos in sync with the [sync-all script] [7].  To get the latest changes:
     $ ./sync-all get
 
 
-References
-==========
+Contributors
+============
+
+Please see the list of [GHC contributors](http://www.haskell.org/ghc/contributors.html "www.haskell.org/ghc/contributors.html").
+
 
   [1]: http://www.haskell.org/ghc/            "www.haskell.org/ghc/"
   [2]: http://hackage.haskell.org/trac/ghc    "hackage.haskell.org/trac/ghc"
@@ -95,9 +98,3 @@ References
   [8]: http://hackage.haskell.org/trac/ghc/wiki/Building/Preparation
        "http://hackage.haskell.org/trac/ghc/wiki/Building/Preparation"
   [9]: http://www.haskell.org/cabal/          "http://www.haskell.org/cabal/"
-
-
-Contributors
-============
-
-Please see the list of [GHC contributors](http://www.haskell.org/ghc/contributors.html "www.haskell.org/ghc/contributors.html").
